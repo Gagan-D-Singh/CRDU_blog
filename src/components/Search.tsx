@@ -5,13 +5,13 @@ interface searchProps {
 const Search = ({ searchPost, setSearchPost } : searchProps) => {
   return (
     <>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form className="search_form" onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="Search">Search</label>
         <input
           type="text"
           placeholder="Search Posts"
           value={searchPost}
-          onChange={() => setSearchPost(e.current.value)}
+          onChange={(e) => setSearchPost(e.target.value)}
         />
       </form>
     </>

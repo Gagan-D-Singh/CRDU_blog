@@ -1,7 +1,7 @@
 const Posts = () => {
   return (
     <main>
-      <p>This will contain all the posts</p>
+      <h1>This will be responsible to add a new Post</h1>
     </main>
   );
 };

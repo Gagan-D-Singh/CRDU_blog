@@ -5,11 +5,12 @@ import './index.css'
 import App from './App.tsx'
 import Posts from './components/pages/Posts.tsx'
 import About from './components/pages/About.tsx'
+import Home from './components/pages/Home.tsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <App />,
     children: [
-      {index: true, element: <App />},
+      {index: true, element: <Home />},
       {path: 'posts', element: <Posts />},
       {path: '/about', element: <About />},
     ],
@@ -18,6 +19,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />  
+    <RouterProvider router={router} />
   </StrictMode>,
 )
