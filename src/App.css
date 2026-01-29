@@ -40,6 +40,13 @@ main {
   flex-direction: row;
   gap: 0.5rem;
   align-items: center;
+  margin: 0 80px;
+  font-size: 1.5rem;
+}
+
+.search_input{
+  padding: 0.3rem;
+  font-size: 1rem;
 }
 
 a > li {
@@ -52,7 +59,7 @@ a > li {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  margin: 16px 0;
+  margin: 16px 80px;
   text-align: left;
 }
 
@@ -70,4 +77,9 @@ a > li {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.header{
+  margin-left: 100px;
+  color: orange;
 }
