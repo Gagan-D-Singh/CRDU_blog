@@ -28,6 +28,11 @@ main {
   font-size: 1.2rem;
 }
 
+.nav > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav_search{
   display: flex;
   flex-direction: row;
@@ -44,9 +49,22 @@ main {
   font-size: 1.5rem;
 }
 
+.content{
+  margin-top: 20px;
+}
+
+
 .search_input{
   padding: 0.3rem;
   font-size: 1rem;
+  width: 300px;
+}
+
+.logout_link{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  margin-right: 100px;
 }
 
 a > li {
@@ -82,4 +100,53 @@ a > li {
 .header{
   margin-left: 100px;
   color: orange;
+}
+
+.login_header{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.login_header > h1{
+  margin-right: 850px;
+  /* color: orange; */
+}
+
+.login_form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login_button{
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 70%;
+  margin-left: 4rem;
+}
+
+.username_input, .password_input{
+  padding: 0.3rem;
+  font-size: 1rem;
+  width: 80%;
+  margin-left: 2.3rem;
+}
+
+.username_label, .password_label{
+  font-size: 1.2rem;
+  margin-left: 2.3rem;
+  margin-top: 0px;
+}
+
+.footer{
+  margin-top: auto;
+  padding: 1rem;
+  /* background-color: #f5f5f5; */
+  text-align: center;
 }
